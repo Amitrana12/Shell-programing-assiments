@@ -6,7 +6,7 @@ b=0
 if [ $x -lt 7 -a $x -gt 0 ]
 then 
 	a=$x
-	echo $a
+	echo $a "-"
 else
 	echo X is wrong
 fi
