@@ -1,6 +1,5 @@
 #!/bin/bash -x
-
-function palindromeNumber(){
+palindromeNumber(){
         local number=$PrimeNum
         local reverse=0
         while [ $PrimeNum -gt 0 ]
