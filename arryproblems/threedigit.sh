@@ -2,20 +2,21 @@
 
 function minimum() {
    local secondSmallest=0
-   local smalle=$1
-   for (( valu=1; valu<$nummber; valu++ ))
+   local smallest=$1
+   for (( val=1; val<$number; val++ ))
    do
-         if [[ ${randomArray[$valu]} -lt $smalle ]]
+         if [[ ${randomArray[$val]} -lt $smallest ]]
          then
-            secondSmallest=$smalle
-            smallest=${randomArray[$valu]}
-         elif [[ ${randomArray[$vaul]} -lt $secondSmallest ]]
+            secondSmallest=$smallest
+            smallest=${randomArray[$val]}
+         elif [[ ${randomArray[$val]} -lt $secondSmallest ]]
          then
-               secondSmallest=${randomArray[$valu]}
+               secondSmallest=${randomArray[$val]}
          fi
    done
       echo $secondSmallest
 }
+
 
 function maximum() {
         local secondLargest=0
